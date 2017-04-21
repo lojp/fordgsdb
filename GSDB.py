@@ -2,19 +2,14 @@ import requests
 import json
 import re
 from bs4 import BeautifulSoup
-import pprint
-import urllib.parse as urlparse
-from urllib.parse import urlencode
-import urllib.request
-import pandas as pd
 import xlrd
 from xlutils.copy import copy
 
-payload = {'cdsid': 'jluo27', 'b64Pwd': 'eW91bmcxMXo=','WslIP':'19.244.68.41','fastRegister':'No'}
+payload = {'cdsid': '*****', 'b64Pwd': '*****','WslIP':'*****','fastRegister':'No'}
 login_url = 'https://www.wsl.ford.com/login.cgi'
 home_url = 'https://web.gsdb2.ford.com/GSDBHomepageWeb/home.do'
 urlpre = 'https://web.gsdb2.ford.com/GSDBHomepageWeb/siteInformationSearchPost.do?method=httpGet&site='
-data = xlrd.open_workbook('C:/Users/jluo27/Desktop/GSDB.xlsx')
+data = xlrd.open_workbook('C:/Users/***/Desktop/GSDB.xlsx')
 wb = copy(data)
 sht = data.sheets()[0]  
 nrows = sht.nrows
